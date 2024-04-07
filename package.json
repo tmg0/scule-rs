@@ -1,5 +1,5 @@
 {
-  "name": "@scule-rs",
+  "name": "scule-rs",
   "version": "0.0.0",
   "main": "index.js",
   "types": "index.d.ts",
@@ -37,6 +37,6 @@
     "universal": "napi universal",
     "version": "napi version"
   },
-  "repository": "https://github.com/tmg0/scule-rs.git",
+  "repository": "https://github.com/tmg0/scule-rs",
   "description": "String Case Utils by Rust"
 }

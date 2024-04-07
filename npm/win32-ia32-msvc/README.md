@@ -1,3 +1,3 @@
-# `@scule-rs-win32-ia32-msvc`
+# `@scule-rs/scule-rs-win32-ia32-msvc`
 
-This is the **i686-pc-windows-msvc** binary for `@scule-rs`
+This is the **i686-pc-windows-msvc** binary for `@scule-rs/scule-rs`

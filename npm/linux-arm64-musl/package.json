@@ -1,5 +1,5 @@
 {
-  "name": "@scule-rs-linux-arm64-musl",
+  "name": "@scule-rs/scule-rs-linux-arm64-musl",
   "version": "0.0.0",
   "os": [
     "linux"
@@ -16,7 +16,7 @@
   "engines": {
     "node": ">= 10"
   },
-  "repository": "https://github.com/tmg0/scule-rs.git",
+  "repository": "https://github.com/tmg0/scule-rs",
   "libc": [
     "musl"
   ]

@@ -1,5 +1,5 @@
 {
-  "name": "@scule-rs-darwin-arm64",
+  "name": "@scule-rs/scule-rs-darwin-arm64",
   "version": "0.0.0",
   "os": [
     "darwin"
@@ -16,5 +16,5 @@
   "engines": {
     "node": ">= 10"
   },
-  "repository": "https://github.com/tmg0/scule-rs.git"
+  "repository": "https://github.com/tmg0/scule-rs"
 }
