@@ -1,0 +1,23 @@
+{
+  "name": "@scule-rs-linux-arm64-musl",
+  "version": "0.0.0",
+  "os": [
+    "linux"
+  ],
+  "cpu": [
+    "arm64"
+  ],
+  "main": "scule-rs.linux-arm64-musl.node",
+  "files": [
+    "scule-rs.linux-arm64-musl.node"
+  ],
+  "description": "String Case Utils by Rust",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  },
+  "repository": "https://github.com/tmg0/scule-rs.git",
+  "libc": [
+    "musl"
+  ]
+}
