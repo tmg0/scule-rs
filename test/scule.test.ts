@@ -1,12 +1,20 @@
 import { describe, test, expect } from 'vitest'
-import { isUppercase } from '..'
+import { splitByCase } from '..'
 
-describe("isUppercase", () => {
+describe("splitByCase", () => {
   test.each([
-    ["FOO", true],
-    ["Foo", true],
-    ["foo", false],
+    ["", []],
+    ["foo", ["foo"]],
+    ["fooBar", ["foo", "Bar"]],
+    ["FooBarBaz", ["Foo", "Bar", "Baz"]],
+    ["FooBARb", ["Foo", "BA", "Rb"]],
+    ["foo_bar-baz/qux", ["foo", "bar", "baz", "qux"]],
+    ["foo--bar-Baz", ["foo", "bar", "Baz"]],
+    ["FOO_BAR", ["FOO", "BAR"]],
+    ["foo123-bar", ["foo123", "bar"]],
+    ["FOOBar", ["FOO", "Bar"]],
+    ["ALink", ["A", "Link"]],
   ])("%s => %s", (input, expected) => {
-    expect(isUppercase(input)).toBe(expected);
-  })
-})
+    expect(splitByCase(input)).toMatchObject(expected);
+  });
+});

@@ -8,16 +8,63 @@ extern crate napi_derive;
 const STR_SPLITTERS: [&str; 4] = ["-", "_", "/", "."];
 
 #[napi]
-pub fn is_uppercase(char: String) -> bool {
-  let c = char.to_lowercase();
-  char != c
-}
-
-#[napi]
-pub fn split_by_case(str: JsString) -> JsString {
+pub fn split_by_case(str: String) -> Vec<String> {
   let splitters = STR_SPLITTERS;
-  let parts: Vec<&str> = Vec::new();
-  str
+  let mut parts: Vec<String> = Vec::new();
+
+  if str.is_empty() {
+    return Vec::new();
+  }
+
+  let mut buff = String::new();
+  let mut previous_upper: Option<bool> = None;
+  let mut previous_splitter: Option<bool> = None;
+
+  for char in str.chars() {
+    let is_splitter = splitters.iter().any(|&s| s.contains(char));
+
+    if is_splitter {
+      if !buff.is_empty() {
+        parts.push(buff.clone());
+        buff.clear();
+      }
+      previous_upper = None;
+      previous_splitter = Some(true);
+      continue;
+    }
+
+    let is_upper = char.is_uppercase();
+
+    if previous_splitter == Some(false) {
+      if previous_upper == Some(false) && is_upper {
+        parts.push(buff.clone());
+        buff.clear();
+        buff.push(char);
+        previous_upper = Some(is_upper);
+        continue;
+      }
+
+      if previous_upper == Some(true) && !is_upper && buff.len() > 1 {
+        let last_char = buff.pop().unwrap();
+        parts.push(buff.clone());
+        buff.clear();
+        buff.push(last_char);
+        buff.push(char);
+        previous_upper = Some(is_upper);
+        continue;
+      }
+    }
+
+    buff.push(char);
+    previous_splitter = Some(false);
+    previous_upper = Some(is_upper);
+  }
+
+  if !buff.is_empty() {
+    parts.push(buff);
+  }
+
+  parts
 }
 
 #[napi]
