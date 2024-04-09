@@ -1,6 +1,7 @@
 {
   "name": "scule-rs",
   "version": "0.0.0",
+  "packageManager": "pnpm@8.15.6",
   "main": "index.js",
   "types": "index.d.ts",
   "napi": {
