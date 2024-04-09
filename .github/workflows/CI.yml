@@ -151,6 +151,8 @@ jobs:
     runs-on: ${{ matrix.settings.host }}
     steps:
       - uses: actions/checkout@v4
+      - name: setup pnpm
+        uses: pnpm/action-setup@v2
       - name: Setup node
         uses: actions/setup-node@v4
         with:
@@ -181,6 +183,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: setup pnpm
+        uses: pnpm/action-setup@v2
       - name: Setup node
         uses: actions/setup-node@v4
         with:
@@ -211,6 +215,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: setup pnpm
+        uses: pnpm/action-setup@v2
       - name: Setup node
         uses: actions/setup-node@v4
         with:
@@ -354,6 +360,8 @@ jobs:
       - test-linux-arm-gnueabihf-binding
     steps:
       - uses: actions/checkout@v4
+      - name: setup pnpm
+        uses: pnpm/action-setup@v2
       - name: Setup node
         uses: actions/setup-node@v4
         with:
