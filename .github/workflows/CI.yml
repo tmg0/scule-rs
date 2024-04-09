@@ -257,6 +257,8 @@ jobs:
       - name: List packages
         run: ls -R .
         shell: bash
+      - name: setup pnpm
+        uses: pnpm/action-setup@v2
       - name: Install dependencies
         run: |
           pnpm config set supportedArchitectures.cpu "arm64"
@@ -291,6 +293,8 @@ jobs:
       - name: List packages
         run: ls -R .
         shell: bash
+      - name: setup pnpm
+        uses: pnpm/action-setup@v2
       - name: Install dependencies
         run: |
           pnpm config set supportedArchitectures.cpu "arm64"
@@ -330,6 +334,8 @@ jobs:
       - name: List packages
         run: ls -R .
         shell: bash
+      - name: setup pnpm
+        uses: pnpm/action-setup@v2
       - name: Install dependencies
         run: |
           pnpm config set supportedArchitectures.cpu "arm"
