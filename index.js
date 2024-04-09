@@ -295,6 +295,8 @@ if (!nativeBinding) {
   throw new Error(`Failed to load native binding`)
 }
 
-const { sum } = nativeBinding
+const { isUppercase, splitByCase, pascalCase } = nativeBinding
 
-module.exports.sum = sum
+module.exports.isUppercase = isUppercase
+module.exports.splitByCase = splitByCase
+module.exports.pascalCase = pascalCase

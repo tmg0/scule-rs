@@ -20,11 +20,10 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@antfu/eslint-config": "^2.13.0",
     "@napi-rs/cli": "^2.18.0",
-    "ava": "^6.0.1"
-  },
-  "ava": {
-    "timeout": "3m"
+    "eslint": "^9.0.0",
+    "vitest": "^1.4.0"
   },
   "engines": {
     "node": ">= 10"
@@ -34,7 +33,7 @@
     "build": "napi build --platform --release",
     "build:debug": "napi build --platform",
     "prepublishOnly": "napi prepublish -t npm",
-    "test": "ava",
+    "test": "vitest",
     "universal": "napi universal",
     "version": "napi version"
   },
