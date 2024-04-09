@@ -38,5 +38,17 @@
     "version": "napi version"
   },
   "repository": "https://github.com/tmg0/scule-rs",
-  "description": "String Case Utils by Rust"
+  "description": "String Case Utils by Rust",
+  "optionalDependencies": {
+    "@scule-rs/binding-darwin-arm64": "workspace:*",
+    "@scule-rs/binding-darwin-x64": "workspace:*",
+    "@scule-rs/binding-linux-arm-gnueabihf": "workspace:*",
+    "@scule-rs/binding-linux-arm64-gnu": "workspace:*",
+    "@scule-rs/binding-linux-arm64-musl": "workspace:*",
+    "@scule-rs/binding-linux-x64-gnu": "workspace:*",
+    "@scule-rs/binding-linux-x64-musl": "workspace:*",
+    "@scule-rs/binding-win32-arm64-msvc": "workspace:*",
+    "@scule-rs/binding-win32-ia32-msvc": "workspace:*",
+    "@scule-rs/binding-win32-x64-msvc": "workspace:*"
+  }
 }
