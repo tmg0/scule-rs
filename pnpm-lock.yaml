@@ -15,26 +15,6 @@ importers:
         specifier: ^6.0.1
         version: 6.1.2
 
-  npm/darwin-arm64: {}
-
-  npm/darwin-x64: {}
-
-  npm/linux-arm-gnueabihf: {}
-
-  npm/linux-arm64-gnu: {}
-
-  npm/linux-arm64-musl: {}
-
-  npm/linux-x64-gnu: {}
-
-  npm/linux-x64-musl: {}
-
-  npm/win32-arm64-msvc: {}
-
-  npm/win32-ia32-msvc: {}
-
-  npm/win32-x64-msvc: {}
-
 packages:
 
   /@mapbox/node-pre-gyp@1.0.11:
