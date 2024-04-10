@@ -33,18 +33,6 @@
     "universal": "napi universal",
     "version": "napi version"
   },
-  "optionalDependencies": {
-    "@tmg0/scule-rs-darwin-arm64": "0.0.1",
-    "@tmg0/scule-rs-darwin-x64": "0.0.1",
-    "@tmg0/scule-rs-linux-arm-gnueabihf": "0.0.1",
-    "@tmg0/scule-rs-linux-arm64-gnu": "0.0.1",
-    "@tmg0/scule-rs-linux-arm64-musl": "0.0.1",
-    "@tmg0/scule-rs-linux-x64-gnu": "0.0.1",
-    "@tmg0/scule-rs-linux-x64-musl": "0.0.1",
-    "@tmg0/scule-rs-win32-arm64-msvc": "0.0.1",
-    "@tmg0/scule-rs-win32-ia32-msvc": "0.0.1",
-    "@tmg0/scule-rs-win32-x64-msvc": "0.0.1"
-  },
   "devDependencies": {
     "@antfu/eslint-config": "^2.13.0",
     "@napi-rs/cli": "^2.18.0",
