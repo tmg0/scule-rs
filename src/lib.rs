@@ -72,5 +72,8 @@ pub fn upper_first(str: String) -> String {
 
 #[napi]
 pub fn pascal_case(str: String) -> String {
-  str
+  split_by_case(str)
+    .into_iter()
+    .map(|p| upper_first(p.to_lowercase()))
+    .collect()
 }

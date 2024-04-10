@@ -7,14 +7,14 @@
   "cpu": [
     "x64"
   ],
+  "description": "String Case Utils by Rust",
+  "license": "MIT",
+  "repository": "https://github.com/tmg0/scule-rs",
   "main": "scule-rs.win32-x64-msvc.node",
   "files": [
     "scule-rs.win32-x64-msvc.node"
   ],
-  "description": "String Case Utils by Rust",
-  "license": "MIT",
   "engines": {
     "node": ">= 10"
-  },
-  "repository": "https://github.com/tmg0/scule-rs"
+  }
 }
