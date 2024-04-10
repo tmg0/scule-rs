@@ -295,8 +295,12 @@ if (!nativeBinding) {
   throw new Error(`Failed to load native binding`)
 }
 
-const { splitByCase, upperFirst, pascalCase } = nativeBinding
+const { splitByCase, upperFirst, lowerFirst, pascalCase, camelCase, kebabCase, snakeCase } = nativeBinding
 
 module.exports.splitByCase = splitByCase
 module.exports.upperFirst = upperFirst
+module.exports.lowerFirst = lowerFirst
 module.exports.pascalCase = pascalCase
+module.exports.camelCase = camelCase
+module.exports.kebabCase = kebabCase
+module.exports.snakeCase = snakeCase

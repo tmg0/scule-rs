@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { pascalCase, splitByCase } from '..'
+import { camelCase, kebabCase, pascalCase, snakeCase, splitByCase } from '..'
 
 describe('splitByCase', () => {
   it.each([
@@ -30,5 +30,38 @@ describe('pascalCase', () => {
     ['foo--bar-Baz', 'FooBarBaz'],
   ])('%s => %s', (input, expected) => {
     expect(pascalCase(input)).toMatchObject(expected)
+  })
+})
+
+describe('camelCase', () => {
+  it.each([
+    ['FooBarBaz', 'fooBarBaz'],
+    ['FOO_BAR', 'fooBar'],
+  ])('%s => %s', (input, expected) => {
+    expect(camelCase(input)).toMatchObject(expected)
+  })
+})
+
+describe('kebabCase', () => {
+  it.each([
+    ['', ''],
+    ['foo', 'foo'],
+    ['foo/Bar', 'foo-bar'],
+    ['foo-bAr', 'foo-b-ar'],
+    ['foo--bar', 'foo-bar'],
+    ['FooBAR', 'foo-bar'],
+    ['ALink', 'a-link'],
+    ['FOO_BAR', 'foo-bar'],
+  ])('%s => %s', (input, expected) => {
+    expect(kebabCase(input)).toMatchObject(expected)
+  })
+})
+
+describe('snakeCase', () => {
+  it.each([
+    ['FooBarBaz', 'foo_bar_baz'],
+    ['FOO_BAR', 'foo_bar'],
+  ])('%s => %s', (input, expected) => {
+    expect(snakeCase(input)).toMatchObject(expected)
   })
 })

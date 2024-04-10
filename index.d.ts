@@ -5,4 +5,8 @@
 
 export function splitByCase(str: string): Array<string>
 export function upperFirst(str: string): string
+export function lowerFirst(str: string): string
 export function pascalCase(str: string): string
+export function camelCase(str: string): string
+export function kebabCase(str: string, joiner?: string | undefined | null): string
+export function snakeCase(str: string): string

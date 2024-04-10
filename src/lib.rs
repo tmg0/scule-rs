@@ -71,9 +71,35 @@ pub fn upper_first(str: String) -> String {
 }
 
 #[napi]
+pub fn lower_first(str: String) -> String {
+  str[0..1].to_lowercase() + &str[1..]
+}
+
+#[napi]
 pub fn pascal_case(str: String) -> String {
   split_by_case(str)
     .into_iter()
     .map(|p| upper_first(p.to_lowercase()))
     .collect()
+}
+
+#[napi]
+pub fn camel_case(str: String) -> String {
+  lower_first(pascal_case(str))
+}
+
+#[napi]
+pub fn kebab_case(str: String, joiner: Option<&str>) -> String {
+  let joiner = joiner.unwrap_or("-");
+
+  split_by_case(str)
+    .into_iter()
+    .map(|p| p.to_lowercase())
+    .collect::<Vec<_>>()
+    .join(joiner)
+}
+
+#[napi]
+pub fn snake_case(str: String) -> String {
+  kebab_case(str, Some("_"))
 }
