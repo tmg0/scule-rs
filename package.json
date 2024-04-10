@@ -2,7 +2,7 @@
   "name": "@tmg0/scule-rs",
   "version": "0.1.0",
   "packageManager": "pnpm@8.15.6",
-  "description": "String Case Utils by Rust",
+  "description": "String Case Utils, Rewritten scule in Rust",
   "license": "MIT",
   "repository": "https://github.com/tmg0/scule-rs",
   "main": "index.js",
