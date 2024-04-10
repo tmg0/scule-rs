@@ -1,7 +1,5 @@
 #![deny(clippy::all)]
 
-use napi::JsString;
-
 #[macro_use]
 extern crate napi_derive;
 
@@ -68,6 +66,11 @@ pub fn split_by_case(str: String) -> Vec<String> {
 }
 
 #[napi]
-pub fn pascal_case(str: JsString) -> JsString {
+pub fn upper_first(str: String) -> String {
+  str[0..1].to_uppercase() + &str[1..]
+}
+
+#[napi]
+pub fn pascal_case(str: String) -> String {
   str
 }

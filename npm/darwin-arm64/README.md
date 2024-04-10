@@ -1,3 +1,3 @@
-# `@scule-rs/scule-rs-darwin-arm64`
+# `@tmg0/scule-rs-darwin-arm64`
 
-This is the **aarch64-apple-darwin** binary for `@scule-rs/scule-rs`
+This is the **aarch64-apple-darwin** binary for `@tmg0/scule-rs`

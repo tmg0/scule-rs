@@ -1,3 +1,3 @@
-# `@scule-rs/scule-rs-win32-arm64-msvc`
+# `@tmg0/scule-rs-win32-arm64-msvc`
 
-This is the **aarch64-pc-windows-msvc** binary for `@scule-rs/scule-rs`
+This is the **aarch64-pc-windows-msvc** binary for `@tmg0/scule-rs`

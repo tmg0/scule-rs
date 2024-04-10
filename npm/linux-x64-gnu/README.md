@@ -1,3 +1,3 @@
-# `@scule-rs/scule-rs-linux-x64-gnu`
+# `@tmg0/scule-rs-linux-x64-gnu`
 
-This is the **x86_64-unknown-linux-gnu** binary for `@scule-rs/scule-rs`
+This is the **x86_64-unknown-linux-gnu** binary for `@tmg0/scule-rs`

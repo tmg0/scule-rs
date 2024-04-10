@@ -1,5 +1,5 @@
 {
-  "name": "@scule-rs/scule-rs-linux-arm-gnueabihf",
+  "name": "@tmg0/scule-rs-linux-arm-gnueabihf",
   "version": "0.0.1",
   "os": [
     "linux"
