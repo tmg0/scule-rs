@@ -7,16 +7,16 @@
   "cpu": [
     "arm64"
   ],
-  "description": "String Case Utils by Rust",
-  "license": "MIT",
-  "repository": "https://github.com/tmg0/scule-rs",
   "main": "scule-rs.linux-arm64-musl.node",
   "files": [
     "scule-rs.linux-arm64-musl.node"
   ],
+  "description": "String Case Utils by Rust",
+  "license": "MIT",
   "engines": {
     "node": ">= 10"
   },
+  "repository": "https://github.com/tmg0/scule-rs",
   "libc": [
     "musl"
   ]

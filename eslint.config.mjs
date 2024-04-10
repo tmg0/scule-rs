@@ -5,5 +5,7 @@ export default antfu({
     'index.d.ts',
     'index.js',
     'rustfmt.toml',
+    '.github/**/*',
+    'npm/**/package.json',
   ],
 })

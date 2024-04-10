@@ -7,5 +7,5 @@ npm
 .prettierignore
 rustfmt.toml
 *.node
-__test__
+test
 renovate.json
