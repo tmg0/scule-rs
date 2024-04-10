@@ -1,6 +1,6 @@
 {
   "name": "@tmg0/scule-rs",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "packageManager": "pnpm@8.15.6",
   "description": "String Case Utils by Rust",
   "license": "MIT",
